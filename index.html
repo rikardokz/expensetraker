@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de Despesas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Gestor de Despesas</h2>
+    <div class="container">
+      <h4>O seu balanço</h4>
+      <h1 id="balance">$0.00</h1>
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Entradas</h4>
+          <p id="money-plus" class="money plus">+$0.00</p>
+        </div>
+        <div>
+          <h4>Saidas</h4>
+          <p id="money-minus" class="money minus">-$0.00</p>
+        </div>
+      </div>
+      <div class="warning" id="warning">
+        <h2>Cuidado, encontra-se em negativo.</h2>
+        <a
+          href="https://www.e-konomista.pt/melhores-dicas-de-poupanca"
+          target="_blank"
+          >Sugestões</a
+        >
+      </div>
+
+      <h3>Registos</h3>
+      <ul id="list" class="list">
+        <!--<li class="minus">
+          Cash<span>-$1.00</span><button class="delete-btn">x</button>
+        </li>-->
+      </ul>
+
+      <h3>Adicione nova transação</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Texto</label>
+          <input type="text" id="text" placeholder="Adicione texto..." />
+        </div>
+        <div id="form-control">
+          <label for="amount"
+            >Quantidade <br />(Negativo para despesa - Positivo para
+            crédito)</label
+          >
+          <input type="number" id="amount" placeholder="Adicione valor..." />
+        </div>
+
+        <button class="btn">Adicione transação</button>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
