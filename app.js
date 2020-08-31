@@ -26,7 +26,7 @@ function addTransaction(e) {
   e.preventDefault();
 
   if (text.value.trim() === "" || amount.value.trim() === "") {
-    alert("Por favor adicione text e quantidade");
+    alert("Por favor adicione Nome e Quantidade");
   } else {
     const transaction = {
       id: generateID(),
